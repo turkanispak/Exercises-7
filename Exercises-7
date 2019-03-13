@@ -1,0 +1,62 @@
+//QUESTION 1
+/*
+#include <stdio.h>
+int main(void)
+{
+	int blank,count;
+	for(count=0;count<10;count++)
+	{
+		for(blank=0;blank<count;blank++)
+		{
+			printf(" ");
+		}
+		printf("***");
+		printf("\n");
+	}
+	return 0;
+}
+*/
+//QUESTION 2
+/*
+#include <stdio.h>
+int main(void)
+{
+	int firstday,space,i,j;
+	printf("Enter the first day of October: ");
+	scanf("%d",&firstday);
+	printf("\t\t\tOctober\n____________________________________________________\n");
+	printf("Sun\tMon\tTue\tWed\tThu\tFri\tSat\n");
+	space=firstday-1;
+	for(i=0;i<space;i++)
+		printf("\t");
+	for(j=1;j<=31;j++)
+	{
+		printf("%d\t",j);
+		if((i+j)%7==0)
+			printf("\n");
+	}
+	printf("\n");
+	return 0;
+}
+*/
+//QUESTION 3
+/*
+#include <stdio.h>
+int main(void)
+{
+	double sum=1.0;
+	int term,counta,countb,fact=1;
+	printf("Enter term number: ");
+	scanf("%d",&term);
+
+	for(counta=1;counta<=term;counta++)
+	{
+		for(countb=1;countb<counta;countb++)
+			fact=fact*countb;
+		sum=sum+((1.0)/fact);
+	}
+	printf("Result of the formula for %d terms is %lf\n",term,sum);
+
+	return 0;
+}
+*/
